@@ -1,0 +1,37 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Ahmed Wesleti",
+      "cin": "09856403",
+      "evaxCode": "1234568795485612123",
+      "email": "ahmed.wesleti@gmail.con",
+      "phone": "92856412"
+    },
+    {
+      "id": 2,
+      "name": "Ali Cherni",
+      "cin": "10452384",
+      "evaxCode": "1549878741523715468",
+      "email": "ali.cherni@gmail.fr",
+      "phone": "53712648"
+    },
+    {
+      "id": 3,
+      "name": "Essia Turki",
+      "cin": "10236789",
+      "evaxCode": "5421378642010365490",
+      "email": "essia.turki@gmail.con",
+      "phone": "20315975"
+    }
+  ], 
+  "appointments": [
+    {
+      "id": 1,
+      "userId": "1",
+      "date": "12-12-2021",
+      "location": "Grombalia Nabeul",
+      "status": "Missed"
+    }
+  ]
+}
