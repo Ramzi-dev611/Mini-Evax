@@ -1,2 +1,26 @@
-<router-outlet></router-outlet>
-<h1 class="header bg-primary">Hello Bootstrap</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <a class="navbar-brand" [routerLink]="">Mini Evax</a>
+        </div>
+        <div class="mr-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<footer class="text-center position-fixed w-100 border-top-1 bottom-0">
+    Thank you for visting our website ♥
+</footer>
