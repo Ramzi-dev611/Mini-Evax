@@ -1,0 +1,36 @@
+<div class="bordered p-5 mt-4 view-height">
+    <h2 class="text-center mb-5">Your Personal Informations</h2>
+    <div class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">Your name</div>
+        <div class="col">{{ "Falfoul ben Flefel" }}</div>
+    </div>
+    <div class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">Cin: </div>
+        <div class="col">{{ 09893308 }}</div>
+    </div>
+    <div class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">Code Evax</div>
+        <div class="col">
+            {{ 524613206546521320654 }}
+            <button class="mx-5 btn btn-sm btn-primary">Change</button>
+        </div>
+    </div>
+    <form class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">
+            <label for="phone">Phone number:</label>
+        </div>
+        <div class="col">
+            <input type="text"  class="">
+            <button class="mx-5 btn btn-sm btn-success">Change</button>
+        </div>
+    </form>
+    <div class="d-flex justify-content-center mt-5">
+        <div>
+            <a [routerLink]="['/me/appointment']" class="btn btn-lg btn-dark">Check your appointments</a>
+        </div>
+    </div>
+</div>

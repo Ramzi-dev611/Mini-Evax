@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container d-flex justify-content-between">
         <div>
-            <a class="navbar-brand" [routerLink]="">Mini Evax</a>
+            <a class="navbar-brand" [routerLink]="['']">Mini Evax</a>
         </div>
         <div class="mr-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Me</a>
+                        <a class="nav-link" [routerLink]="['me']">Me</a>
                     </li>
                 </ul>
             </div>
@@ -21,6 +21,6 @@
 <div class="container">
     <router-outlet></router-outlet>
 </div>
-<footer class="text-center position-fixed w-100 border-top-1 bottom-0">
+<footer class="text-center p-3 position-fixed w-100 bg-opacity-100 bg-light bottom-0">
     Thank you for visting our website ♥
 </footer>
