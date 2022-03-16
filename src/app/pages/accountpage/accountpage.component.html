@@ -18,13 +18,23 @@
             <button class="mx-5 btn btn-sm btn-primary">Change</button>
         </div>
     </div>
+    <form  class="row my-3">
+        <div class="col-2"></div>
+        <div class="col">
+            <label for="phone">Email:</label>
+        </div>
+        <div class="col">
+            <input type="text" name="email" [(ngModel)]="email">
+            <button class="mx-5 btn btn-sm btn-success">Change</button>
+        </div>
+    </form>
     <form class="row my-3">
         <div class="col-2"></div>
         <div class="col">
             <label for="phone">Phone number:</label>
         </div>
         <div class="col">
-            <input type="text"  class="">
+            <input type="text" name="phone" [(ngModel)] ="phone">
             <button class="mx-5 btn btn-sm btn-success">Change</button>
         </div>
     </form>
