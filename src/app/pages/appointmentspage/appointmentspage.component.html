@@ -17,8 +17,8 @@
                 </div>
                 <div *ngIf="appointment.status !== 'Available'" class="list-group-item d-flex justify-content-around">
                     <div class="">certificate :</div>
-                    <button *ngIf="appointment.status === 'Missed'" class="btn btn-sm btn-primary">Reschedual</button>
-                    <button *ngIf="appointment.status === 'Taken'" class="btn btn-sm btn-success">Get pass</button>
+                    <button *ngIf="appointment.status === 'Missed'" (click)="reschedule()" class="btn btn-sm btn-primary">Reschedual</button>
+                    <button *ngIf="appointment.status === 'Taken'" (click)="getPass()" class="btn btn-sm btn-success">Get pass</button>
                 </div>
             </li>
         </ul>

@@ -25,4 +25,12 @@ export class AppointmentspageComponent implements OnInit {
     })
   }
 
+  public reschedule(): void{
+    this.toastr.info('A request is sent to reschedule you a new appointment')
+  }
+
+  public getPass(){
+    this.toastr.info('Check your email to get the pass')
+  }
+
 }

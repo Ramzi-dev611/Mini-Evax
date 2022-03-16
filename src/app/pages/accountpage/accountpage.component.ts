@@ -46,4 +46,8 @@ export class AccountpageComponent implements OnInit {
     })
   }
 
+  public changeCode(){
+    this.toastr.info('A request to change your Evax Code has been sent')
+  }
+
 }
