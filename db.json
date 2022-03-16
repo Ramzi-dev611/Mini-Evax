@@ -25,13 +25,35 @@
       "phone": "20315975"
     }
   ], 
+
   "appointments": [
     {
       "id": 1,
       "userId": "1",
-      "date": "12-12-2021",
+      "date": "13-12-2021",
       "location": "Grombalia Nabeul",
       "status": "Missed"
+    },
+    {
+      "id": 2,
+      "userId": "1",
+      "date": "16-08-2021",
+      "location": "Dar Chaaban - Nabeul",
+      "status": "Taken"
+    },
+    {
+      "id": 3,
+      "userId": "2",
+      "date": "20-11-2021",
+      "location": "CUN - Ariana",
+      "status": "Missed"
+    },
+    {
+      "id": 4,
+      "userId": "2",
+      "date": "02-04-2022",
+      "location": "sidi thabet -Ariana",
+      "status": "Available"
     }
   ]
 }

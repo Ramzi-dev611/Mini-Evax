@@ -1,9 +1,9 @@
 <div class="mt-5 height">
     <h1 class="text-center text-info">You Appointments and Certificates</h1>
     <ul class="list-group w-50 m-auto my-5">
-        <li class="list-group-item">
+        <li class="list-group-item" *ngFor="let Appointment of Appointments">
             <div class="list-group-item">
-                date : {{ '25-12-2021' }}
+                date : {{ Appointment.date }}
             </div>
             <div class="list-group-item">
                 location : {{ 'Grombalia - Nabeul' }}
