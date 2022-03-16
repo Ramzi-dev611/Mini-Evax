@@ -13,7 +13,7 @@
       "name": "Ali Cherni",
       "cin": "10452384",
       "evaxCode": "1549878741523715468",
-      "email": "ali.cherni@gmail.fr",
+      "email": "ali.cherni@gmail.com",
       "phone": "53712648"
     },
     {
@@ -24,14 +24,56 @@
       "email": "essia.turki@gmail.con",
       "phone": "20315975"
     }
-  ], 
+  ],
   "appointments": [
     {
       "id": 1,
-      "userId": "1",
+      "userId": 1,
       "date": "12-12-2021",
-      "location": "Grombalia Nabeul",
+      "location": "Grombalia - Nabeul",
       "status": "Missed"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "date": "15-10-2021",
+      "location": "Grombalia - Nabeul",
+      "status": "Taken"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "date": "22-03-2022",
+      "location": "Grombalia - Nabeul",
+      "status": "Available"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "date": "10-6-2021",
+      "location": "Chargueya - CUN - Tunis",
+      "status": "Taken"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "date": "12-12-2021",
+      "location": "Chargueya - CUN - Tunis",
+      "status": "Taken"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "date": "15-12-2021",
+      "location": "Dar Chaabane - Nabeul",
+      "status": "Taken"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "date": "01-04-2022",
+      "location": "Dar Chaabane - Nabeul",
+      "status": "Available"
     }
   ]
 }

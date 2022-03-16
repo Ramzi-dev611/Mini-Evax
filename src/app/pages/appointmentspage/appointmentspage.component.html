@@ -1,33 +1,26 @@
-<div class="mt-5 height">
+<div class="pb-5 my-5 height">
     <h1 class="text-center text-info">You Appointments and Certificates</h1>
-    <ul class="list-group w-50 m-auto my-5">
-        <li class="list-group-item">
-            <div class="list-group-item">
-                date : {{ '25-12-2021' }}
-            </div>
-            <div class="list-group-item">
-                location : {{ 'Grombalia - Nabeul' }}
-            </div>
-            <div class="list-group-item">
-                status : {{ 'taken' }}
-            </div>
-            <div class="list-group-item">
-                certificate : <button class="btn btn-sm btn-primary">Get pass</button>
-            </div>
-        </li>
-        <li class="list-group-item">
-            <div class="list-group-item">
-                date : {{ '16-08-2021' }}
-            </div>
-            <div class="list-group-item">
-                location : {{ 'Dar Chaaban - Nabeul' }}
-            </div>
-            <div class="list-group-item">
-                status : {{ 'missed' }}
-            </div>
-            <div class="list-group-item">
-                certificate : <button class="btn btn-sm btn-primary" disabled>Get pass</button>
-            </div>
-        </li>
-    </ul>
+    <div class="height">
+        <ul class="list-group w-75 m-auto my-5">
+            <li *ngFor="let appointment of appointments" class="list-group-item">
+                <div class="list-group-item d-flex justify-content-around">
+                    <div class="text-center w-50">date :</div>
+                    <div class="text-center w-50">{{ appointment.date }}</div>
+                </div>
+                <div class="list-group-item d-flex justify-content-around">
+                    <div class="text-center w-50">Location :</div>
+                    <div class="text-center w-50">{{ appointment.location }}</div>
+                </div>
+                <div class="list-group-item d-flex justify-content-around">
+                    <div class="text-center w-50">Status :</div>
+                    <div class="text-center w-50">{{ appointment.status }}</div>
+                </div>
+                <div *ngIf="appointment.status !== 'Available'" class="list-group-item d-flex justify-content-around">
+                    <div class="">certificate :</div>
+                    <button *ngIf="appointment.status === 'Missed'" class="btn btn-sm btn-primary">Reschedual</button>
+                    <button *ngIf="appointment.status === 'Taken'" class="btn btn-sm btn-success">Get pass</button>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
